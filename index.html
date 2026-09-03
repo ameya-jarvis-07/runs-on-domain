@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ameya's GitHub Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="wrapper">
+        <h1>Ameya's GitHub Portfolio</h1>
+        <nav>
+          <a class="active" href="./index.html">Profile & Top Repos</a>
+          <a href="./repositories.html">All Repositories</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrapper">
+      <section class="card" id="profile-section">
+        <h2>GitHub Profile</h2>
+        <p id="profile-status" class="status">Loading profile...</p>
+        <div id="profile-content" class="hidden"></div>
+      </section>
+
+      <section class="card" id="top-repositories-section">
+        <h2>Top Repositories</h2>
+        <p class="muted">Ranked by stars, watchers, and recent activity.</p>
+        <p id="top-repos-status" class="status">Loading repositories...</p>
+        <div id="top-repositories" class="repo-grid hidden"></div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

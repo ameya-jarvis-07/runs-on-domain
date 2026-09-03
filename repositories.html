@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All GitHub Repositories</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="repositories">
+    <header class="site-header">
+      <div class="wrapper">
+        <h1>Ameya's GitHub Portfolio</h1>
+        <nav>
+          <a href="./index.html">Profile & Top Repos</a>
+          <a class="active" href="./repositories.html">All Repositories</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrapper">
+      <section class="card">
+        <div class="all-repos-header">
+          <div>
+            <h2>All Repositories</h2>
+            <p class="muted">Complete list fetched from GitHub.</p>
+          </div>
+          <label>
+            Sort by:
+            <select id="repo-sort">
+              <option value="updated">Recently Updated</option>
+              <option value="stars">Most Stars</option>
+              <option value="name">Name (A-Z)</option>
+            </select>
+          </label>
+        </div>
+        <p id="all-repos-status" class="status">Loading repositories...</p>
+        <div id="all-repositories" class="repo-list hidden"></div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
